@@ -1,0 +1,7 @@
+Question : Select the names and job start dates of all employees who work for the department number 5.
+
+Solution :  
+
+select e.f_name, e.l_name, j.start_date from 
+employees e inner join job_history j on e.emp_id = j.empl_id
+where j.dept_id = 5;

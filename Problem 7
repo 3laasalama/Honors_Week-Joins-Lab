@@ -1,0 +1,11 @@
+Question :
+
+Re-write the previous query but have the result set include all employee names but department id and department names only for male employees.
+
+
+Solution :
+
+select e.f_name, e.l_name , d.dept_id_dep, d.dep_name, e.sex
+from employees e full outer join departments d
+on e.dep_id = d.dept_id_dep and e.sex = 'M' ;
+
